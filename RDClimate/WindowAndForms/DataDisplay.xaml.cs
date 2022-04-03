@@ -27,7 +27,7 @@ namespace RDClimate
         public SeriesCollection seriesCollection { get; set; }
         //List storage data for obcisses and ordinates
         public List<string> Labels { get; set; }
-        //
+        // Creating variables for further interaction and their processing
         private double[] temp = { 0, 0, 0 };
         private double temperature;
         private double humidity;
@@ -35,7 +35,7 @@ namespace RDClimate
         private static System.Timers.Timer aTimer;
 
         /// <summary>
-        /// 
+        /// Сlass storing weather station properties
         /// </summary>
         class RecivedValues
         {
