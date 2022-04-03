@@ -161,7 +161,7 @@ public class AuthenticationKeys
 11. By going to the `bin` folder you can see the `Release` folder, which is the final build of the project that you copy.
 12. By going to the `Release` folder, you can see the exe file that is the final assembled program, you can form a shortcut by sending the exe to the desktop.
 ___
-#### Step 6 Setting up a WPF Project:
+#### Step 6 Housing for a weather station:
 + You can print the case for your weather station to a 3d printer using stl models from the `RD 3Dmodel` folder
 
 ![step6 3DModel](ImagesForGit/RDClimateBox.png)
