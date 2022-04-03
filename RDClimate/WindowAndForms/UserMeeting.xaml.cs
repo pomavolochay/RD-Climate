@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace RDClimate
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UserMeeting.xaml
     /// </summary>
     public partial class UserMeeting : Window
     {
