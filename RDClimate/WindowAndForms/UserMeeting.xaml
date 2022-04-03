@@ -1,0 +1,235 @@
+﻿<Window x:Class="RDClimate.UserMeeting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RDClimate"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="UserMeeting" Height="450" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="#181735">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#0f0f2d"
+              Grid.ColumnSpan="2"
+              MouseDown="Grid_MouseDown">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="RD Electronics"
+                       Foreground="White"
+                       Grid.Column="0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontFamily="/Fonts/#Ubuntu"
+                       FontWeight="medium">
+
+            </TextBlock>
+            <Button Content="х"
+                        Click="CloseWindow"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Foreground="White"
+                        FontWeight="ExtraBlack"
+                        Margin="203.4,0,-1,-0.2" Grid.Column="2">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="TextElement.FontFamily" Value="/Fonts/#Ubuntu"/>
+                        <Setter Property="Background" Value="#fe6584"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#ff4c70"/>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="15" Height="15"
+                                    CornerRadius="3"
+                                    Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Content="-"
+                        Click="MinimizeWindow"
+                        Foreground="White"
+                        FontWeight="ExtraBlack"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="177.4,0,25,-0.2" Grid.Column="2" RenderTransformOrigin="-0.447,0.524">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="TextElement.FontFamily" Value="/Fonts/#Ubuntu"/>
+                        <Setter Property="Background" Value="#3dddc2"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#36c6ae"/>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="15" Height="15"
+                                    CornerRadius="3"
+                                    Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+        </Grid>
+
+
+
+        <StackPanel Grid.Row="1"
+                    VerticalAlignment="Center"
+                    Margin="60"
+                    >
+
+            <StackPanel>
+                <StackPanel Orientation="Horizontal"
+                            Margin="0,0,0,20">
+                    <Image Width="50" Height="50"
+                       Source="/Images/pc.png"
+                       RenderOptions.BitmapScalingMode="Fant">
+                    </Image>
+                    <TextBlock Text="RD Climate"
+                           FontSize="20"
+                           Foreground="White"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontFamily="/Fonts/#Ubuntu"
+                           FontWeight="Medium"
+                           Margin="10,0,0,0">
+
+                    </TextBlock>
+                </StackPanel>
+                <TextBlock Text="Climate"
+                       Foreground="White"
+                       FontSize="30"
+                       FontWeight="Medium"
+                       FontFamily="/Fonts/#Ubuntu">
+                </TextBlock>
+                <TextBlock Text="Always under Control"
+                       Foreground="White"
+                       FontSize="30"
+                       FontWeight="Medium"
+                       FontFamily="/Fonts/#Ubuntu" Height="37" Margin="0,0,-36,0">
+                </TextBlock>
+                <TextBlock Text="This program allows you to monitor the audience's climate on an ongoing basics and give advice on how to improve it"
+                       Foreground="White"
+                       FontSize="12"
+                       TextWrapping="Wrap"
+                       FontFamily="/Fonts/#Ubuntu"
+                       Margin="0,10,0,0">
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,15,0,0">
+                <Button Content="Let's begin"
+                        Click="GoAut"
+                        Foreground="White"
+                        FontWeight="Medium"
+                        Margin="0,0,10,0" Width="278" Height="72">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="/Fonts/#Ubuntu"/>
+                            <Setter Property="Background" Value="#fe6584"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#ff4c70"/>
+
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="25"
+                                    CornerRadius="12"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <Frame Margin="10,23,0,-48.4"
+               x:Name="MainPage" Grid.ColumnSpan="2" Grid.RowSpan="2"
+               NavigationUIVisibility="Hidden"/>
+        <Grid Grid.Column="1"
+              Grid.RowSpan="2"
+              Margin="160, -365, -610, 85"
+              Panel.ZIndex="-1">
+            <Grid.RenderTransform>
+                <RotateTransform Angle="50"/>
+            </Grid.RenderTransform>
+            <StackPanel Orientation="Horizontal"
+                        Margin="-350, 250, -255, -250">
+                <StackPanel>
+                    <Border Width="700" Height="35"
+                            Background="#3dddc2"
+                            Margin="150,0,0,0"
+                            CornerRadius="20"/>
+                    <Border Width="700" Height="35"
+                            Background="#fc6586"
+                            Margin="0,15,0,0"
+                            CornerRadius="20"/>
+
+                    <Border Width="700" Height="35"
+                            Background="#383660"
+                            Margin="75,15,0,0"
+                            CornerRadius="20"/>
+                </StackPanel>
+                <StackPanel>
+                    <Border Width="700" Height="35"
+                            Background="#3dddc2"
+                            Margin="150,0,0,0"
+                            CornerRadius="20"/>
+                    <Border Width="700" Height="35"
+                            Background="#fc6586"
+                            Margin="0,15,0,0"
+                            CornerRadius="20"/>
+
+                    <Border Width="700" Height="35"
+                            Background="#383660"
+                            Margin="75,15,0,0"
+                            CornerRadius="20"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>
