@@ -1,0 +1,15 @@
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\bin\Release\BunyV2.exe.config
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\bin\Release\BunyV2.exe
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\bin\Release\BunyV2.pdb
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\bin\Release\Bunifu_UI_v1.52.dll
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\bin\Release\M2Mqtt.Net.dll
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\bin\Release\MetroFramework.Design.dll
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\bin\Release\MetroFramework.dll
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\bin\Release\MetroFramework.Fonts.dll
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\bin\Release\M2Mqtt.Net.pdb
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\obj\Release\BunyV2.csprojResolveAssemblyReference.cache
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\obj\Release\BunyV2.MyForm.resources
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\obj\Release\BunyV2.Properties.Resources.resources
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\obj\Release\BunyV2.csproj.GenerateResource.Cache
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\obj\Release\BunyV2.exe
+E:\Project\C#\Hoc Windowform\BunyV2\BunyV2\obj\Release\BunyV2.pdb
