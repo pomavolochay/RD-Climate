@@ -31,6 +31,16 @@ namespace SecretMessage.WPF
                 this.DragMove();
             }
         }
+
+        private void CloseWindow(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Close();
+        }
+
+        private void MinimizeWindow(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        }
     }
 
 }

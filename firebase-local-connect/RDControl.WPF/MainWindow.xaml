@@ -67,7 +67,7 @@
 
             </Grid>
         </Border>
-        
+
         <!--Right Section-->
         <Border Grid.Column="1" Background="#ffffff" CornerRadius="0 10 10 0" MouseDown="Border_MouseDown">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
@@ -92,6 +92,73 @@
                 </ContentControl>
             </ScrollViewer>
         </Border>
+        <StackPanel  Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Width="72">
+            <Button Content="х"
+                        Click="CloseWindow"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Foreground="White"
+                        FontWeight="ExtraBlack"
+                        Margin="6" Cursor="Hand"
+                        >
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="TextElement.FontFamily" Value="/Fonts/#Ubuntu"/>
+                        <Setter Property="Background" Value="#fe6584"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#ff4c70"/>
 
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="20" Height="20"
+                                    CornerRadius="3"
+                                    Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Content="-"
+                        Click="MinimizeWindow"
+                        Foreground="White"
+                        FontWeight="ExtraBlack"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        RenderTransformOrigin="-0.447,0.524">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="TextElement.FontFamily" Value="/Fonts/#Ubuntu"/>
+                        <Setter Property="Background" Value="#3dddc2"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#36c6ae"/>
+
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+
+                </Button.Style>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="20" Height="20"
+                                    CornerRadius="3"
+                                    Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
     </Grid>
 </Window>
